@@ -1,0 +1,51 @@
+The Singleton design pattern ensures that a class has only
+one instance and provides a global access point to it.
+
+Explanation:
+Metaclass SingletonMeta:
+
+This is a Singleton implementation based on a metaclass.
+_instances is a dictionary that stores created instances.
+Method __call__:
+
+Called when a new instance of the class is created.
+Checks if an instance already exists. If not, creates a new 
+one and stores it in _instances.
+Singleton class:
+
+Uses SingletonMeta as the metaclass.
+There are set_value and get_value methods for working with
+ instance values.
+Client code:
+
+We created two objects singleton1 and singleton2.
+Validation shows that the erroneous changes refer to the same 
+instance, ensuring that the Singleton pattern works correctly.
+This code makes Singleton thread-safe by ensuring that only one
+ instance of a class is created in the entire program.
+
+ Шаблон проектування Singleton гарантує, що клас має тільки
+один екземпляр і забезпечує глобальну точку доступу до нього.
+
+Пояснення:
+Метаклас SingletonMeta:
+
+Це реалізація Singleton на основі метакласу.
+_instances — це словник, який зберігає створені екземпляри.
+Метод __call__:
+
+Викликається, коли створюється новий екземпляр класу.
+Перевіряє, чи екземпляр уже існує. Якщо ні, створює новий
+один і зберігає його в _instances.
+Клас Singleton:
+
+Використовує SingletonMeta як метаклас.
+Існують методи set_value і get_value для роботи
+ значення екземплярів.
+Код клієнта:
+
+Ми створили два об’єкти singleton1 і singleton2.
+Перевірка показує, що помилкові зміни стосуються того самого
+наприклад, гарантуючи, що шаблон Singleton працює правильно.
+Цей код робить Singleton потокобезпечним, гарантуючи, що лише один
+ екземпляр класу створюється у всій програмі.
